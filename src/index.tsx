@@ -1,11 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './pages/Home'
+import App from './App'
 import reportWebVitals from './helper/reportWebVitals'
 import { isProdEnv } from './config'
-
-// 引入样式
-import './styles/global.scss'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 
 import styles from './style.module.scss'
 
-function App() {
+const Home: React.FC = () => {
   return (
     <div className={styles.app}>
       <header className={styles.header}>
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

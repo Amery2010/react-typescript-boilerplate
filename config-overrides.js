@@ -1,4 +1,4 @@
-const { override, addWebpackPlugin, fixBabelImports } = require('customize-cra')
+const { override, fixBabelImports } = require('customize-cra')
 
 module.exports = {
   webpack: override(
@@ -6,6 +6,6 @@ module.exports = {
     fixBabelImports('lodash', {
       libraryDirectory: '',
       camel2DashComponentName: false,
-    }),
+    })
   ),
 }

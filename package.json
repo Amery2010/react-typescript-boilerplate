@@ -1,14 +1,12 @@
 {
   "name": "react-typescript-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "REACT_APP_SERVER_ENV=develop react-app-rewired start",
-    "build:dev": "REACT_APP_SERVER_ENV=develop react-app-rewired build",
-    "build:fat": "REACT_APP_SERVER_ENV=fat react-app-rewired build",
-    "build:prod": "REACT_APP_SERVER_ENV=production react-app-rewired build",
-    "build:rc": "REACT_APP_SERVER_ENV=rc react-app-rewired build",
+    "build": "REACT_APP_SERVER_ENV=production react-app-rewired build",
     "test": "REACT_APP_SERVER_ENV=develop react-app-rewired test",
+    "lint": "eslint ./src --ext .ts,.tsx --fix",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
@@ -66,7 +64,6 @@
   "prettier": {
     "printWidth": 120,
     "tabWidth": 2,
-    "eslintIntegration": true,
     "singleQuote": true,
     "semi": false
   },
