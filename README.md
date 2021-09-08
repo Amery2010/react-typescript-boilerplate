@@ -8,5 +8,5 @@
 
 - `yarn start` 进入开发模式
 - `yarn test` 运行测试用例
-- `yarn build:{env}` 构建对应 `env` 环境的项目
+- `yarn build` 构建生产环境项目文件
 - `yarn analyze` 分析打包后的项目依赖
